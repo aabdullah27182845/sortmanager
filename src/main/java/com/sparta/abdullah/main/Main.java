@@ -1,7 +1,13 @@
 package com.sparta.abdullah.main;
 
+
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        ProgramController pc = new ProgramController();
+        pc.main();
+        pc.compareAlgorithms();
+        pc.sortArray();
+        pc.displayEnd();
     }
 }

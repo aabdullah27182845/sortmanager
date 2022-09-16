@@ -1,4 +1,4 @@
-package com.sparta.abdullah;
+package com.sparta.abdullah.sorters;
 
 import com.sparta.abdullah.sorters.MergeSort;
 import org.junit.jupiter.api.DisplayName;

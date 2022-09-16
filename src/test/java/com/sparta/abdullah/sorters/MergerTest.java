@@ -1,4 +1,4 @@
-package com.sparta.abdullah;
+package com.sparta.abdullah.sorters;
 
 import com.sparta.abdullah.sorters.BubbleSort;
 import com.sparta.abdullah.sorters.Merger;
