@@ -2,8 +2,13 @@ package com.sparta.abdullah.main;
 
 import com.sparta.abdullah.factory.Factory;
 import com.sparta.abdullah.factory.TimeCalculator;
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class ProgramController {
+
+    public static Logger logger = LogManager.getLogger(ProgramController.class);
 
     InputManager inputManager = new InputManager();
     DisplayManager displayManager = new DisplayManager();
@@ -13,6 +18,7 @@ public class ProgramController {
 
     int arrLength;
     char sortingAlg;
+    String sorter;
     int[] list;
     boolean multiple;
     char[] multipleSortingAlg;
@@ -20,6 +26,16 @@ public class ProgramController {
     public ProgramController() {
         this.arrLength =  100;
         this.sortingAlg = 'm';
+    }
+
+    public void setSorter(char so) {
+        if (so == 'm') {
+            this.sorter = "Merge Sort";
+        } else if (so == 'b') {
+            this.sorter = "Bubble Sort";
+        } else {
+            this.sorter = "Tree Sort";
+        }
     }
 
     public void main() {
@@ -46,6 +62,9 @@ public class ProgramController {
 
             list = factory.factoryChoose(sortingAlg, list);
             displayManager.displaySortedList(list);
+
+            this.setSorter(this.sortingAlg);
+            logger.log(Level.TRACE, "Time taken for using " + this.sorter + " is " + this.factory.getTimeTaken());
 
         } else {
 

@@ -27,16 +27,17 @@ public class InputManager {
     public int userInputLength() {
         try {
             int userInput = input.nextInt();
-            while (userInput <= 1) {
-                System.out.println("Can't input a value that's lower than 2");
+            while (userInput <= 2 || userInput >= 300000 ) {
+                System.out.println("Enter a value between 3 and 300,000");
                 userInput = input.nextInt();
             }
             return userInput;
         } catch (Exception e) {
             System.out.println("That's an Invalid Input");
             e.printStackTrace();
+            return -1;
         }
-        return -1;
+
     }
 
     public char userChoiceInput() {

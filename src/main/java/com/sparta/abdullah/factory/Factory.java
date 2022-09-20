@@ -4,23 +4,30 @@ import com.sparta.abdullah.main.ProgramController;
 import com.sparta.abdullah.sorters.BubbleSort;
 import com.sparta.abdullah.sorters.MergeSort;
 import com.sparta.abdullah.sorters.TreeSort;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
+
 
 import java.util.Random;
 
 public class Factory {
+
     long timeTaken;
 
-    public static Logger logger = (Logger) LogManager.getLogger(ProgramController.class);
+
 
     public int[] generateArray(int length) {
-        Random random = new Random();
-        int[] outputArr = new int[length];
-        for (int i = 0; i < length; i++) {
-            outputArr[i] = random.nextInt(length + 1);
+        if (length > 1) {
+            Random random = new Random();
+            int[] outputArr = new int[length];
+            for (int i = 0; i < length; i++) {
+                outputArr[i] = random.nextInt(length + 1);
+            }
+            return outputArr;
+        } else {
+            return new int[] {};
         }
-        return outputArr;
     }
 
     public int[] factoryChoose(char choice, int[] unsorted) {
