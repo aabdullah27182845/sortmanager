@@ -23,7 +23,6 @@ public class ProgramController {
     String sorter;
     int[] list;
     boolean multiple;
-    char[] multipleSortingAlg;
 
     public ProgramController() {
         this.arrLength =  100;
