@@ -9,6 +9,25 @@ an interface for the sorter classes which was implemented three times.
 - Both the bubble sort and the merge sort algorithms contain a timeTaken attribute that measures the time taken for the algorithm to complete.
 - Merger class exists to merge two sorted arrays.
 
+Here is the interface that is provided by the program:
+
+```
+========== SORT MANAGER ==========
+In the first input line, enter the 
+length of the list you would like to make
+In the second line, enter which 
+sorting algorithm you would like to use.
+Enter a number that is higher than 1:
+```
+The program then asks if you would like to compare the algorithms or only use one.
+```
+Enter either (y) or (n) if you want to compare different sorting algorithms:
+---
+Enter (m) for merge sort, (b) for bubble sort,
+and (t) for tree sort.
+---
+```
+
 ### Sorter interface
 
 ```java
@@ -158,4 +177,3 @@ public class BinarySearchTree {
 }
 ```
 
-### Contr
