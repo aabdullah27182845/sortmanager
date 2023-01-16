@@ -27,7 +27,10 @@ Enter (m) for merge sort, (b) for bubble sort,
 and (t) for tree sort.
 ---
 ```
+Comparisons between algorithms essentially is done by inputting the same random string into each of the sorters, and then
+outputting the time it takes for the algorithms to sort the array.
 
+For anyone who is interested, here are the implementations of the sorting algorithms.
 ### Sorter interface
 
 ```java
