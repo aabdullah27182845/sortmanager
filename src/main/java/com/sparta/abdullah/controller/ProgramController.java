@@ -1,7 +1,9 @@
-package com.sparta.abdullah.main;
+package com.sparta.abdullah.controller;
 
 import com.sparta.abdullah.factory.Factory;
 import com.sparta.abdullah.factory.TimeCalculator;
+import com.sparta.abdullah.main.DisplayManager;
+import com.sparta.abdullah.main.InputManager;
 import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

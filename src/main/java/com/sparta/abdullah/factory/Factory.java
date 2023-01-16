@@ -1,12 +1,8 @@
 package com.sparta.abdullah.factory;
 
-import com.sparta.abdullah.main.ProgramController;
 import com.sparta.abdullah.sorters.BubbleSort;
 import com.sparta.abdullah.sorters.MergeSort;
 import com.sparta.abdullah.sorters.TreeSort;
-import org.apache.logging.log4j.Level;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 
 import java.util.Random;
