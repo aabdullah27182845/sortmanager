@@ -1,7 +1,6 @@
 # Sort Manager
 
-This is the first instance of the sort manager project. It contains
-an interface for the sorter classes which was implemented three times.
+This is the first project given as an assessment during the pre-assignment period in Sparta Global.
 
 - Bubble Sort Class is implemented from the Sorter interface. The arraySort method sorts the list using the bubble sort algorithm.
 - Merge Sort Class sorts the array using the merge sort algorithm.
