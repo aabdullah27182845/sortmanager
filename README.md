@@ -2,6 +2,11 @@
 
 This is the first project given as an assessment during the pre-assignment period in Sparta Global.
 
+### Overview
+- The task was to create sorters for Bubble Sort, Merge Sort, and Binary Search Tree.
+- These sorting algorithms are to compared with each other in terms of how efficient they are.
+- The user of this program is to enter a length of the array that the sorting algorithm will sort.
+### Code Breakdown
 - Bubble Sort Class is implemented from the Sorter interface. The arraySort method sorts the list using the bubble sort algorithm.
 - Merge Sort Class sorts the array using the merge sort algorithm.
 - Tree Sort class sorts the array by creating a binary search tree and then returning the object using in-order traversal.
